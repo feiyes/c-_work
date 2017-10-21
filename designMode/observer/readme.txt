@@ -1,0 +1,3 @@
+observer的一个实例在Model/View/Control(MVC)结构在系统开发结构设计中具有很重要的意义和地位，MVC实现了业务逻辑和表示层的解耦。在Gstreamer实现中，
+IMediaPlayer是Subject,IMediaPlayerListener为Observer。其中setPlayerListener方法对应Attach()方法，update()方法则与Onloaded,OnPlayCompleted等对应。
+MediaChannel是具体的listener，GStreamerPlayerImpl为具体的subject.
